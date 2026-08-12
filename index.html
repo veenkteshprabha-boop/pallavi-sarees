@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pallavi Sarees | Sarees & Dresses</title>
+  <meta name="description" content="Pallavi Sarees - Modern, luxurious and colourful sarees and dresses in Raichur, Karnataka.">
+  <style>
+    :root{
+      --wine:#7a1236;
+      --deep:#2b0b1a;
+      --gold:#d6a84f;
+      --cream:#fff8ef;
+      --pink:#f8dce5;
+      --text:#28151d;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Georgia, "Times New Roman", serif;background:var(--cream);color:var(--text);line-height:1.6}
+    nav{
+      position:fixed;top:0;width:100%;z-index:10;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:16px 7%;background:rgba(43,11,26,.94);backdrop-filter:blur(10px)
+    }
+    .logo{color:#fff;font-size:1.45rem;font-weight:bold;letter-spacing:.5px}
+    .logo span{color:var(--gold)}
+    nav a{color:#fff;text-decoration:none;margin-left:24px;font-family:Arial,sans-serif;font-size:.92rem}
+    nav a:hover{color:var(--gold)}
+    .hero{
+      min-height:100vh;display:grid;place-items:center;text-align:center;
+      padding:120px 7% 70px;
+      background:
+        radial-gradient(circle at 20% 30%,rgba(214,168,79,.32),transparent 25%),
+        radial-gradient(circle at 80% 65%,rgba(190,34,93,.32),transparent 30%),
+        linear-gradient(135deg,#350b20,#86143e 55%,#c77a32);
+      color:white;position:relative;overflow:hidden
+    }
+    .hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:50%}
+    .hero:before{width:420px;height:420px;left:-160px;top:18%}
+    .hero:after{width:500px;height:500px;right:-200px;bottom:-180px}
+    .hero-content{max-width:850px;position:relative;z-index:1}
+    .eyebrow{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:4px;color:#ffe3a3;font-size:.8rem}
+    h1{font-size:clamp(3.2rem,9vw,7rem);line-height:.95;margin:20px 0}
+    .hero p{font-family:Arial,sans-serif;font-size:1.1rem;max-width:650px;margin:0 auto 30px;color:#fff3f7}
+    .btn{
+      display:inline-block;padding:14px 27px;border-radius:30px;
+      text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;margin:6px;
+      transition:.2s
+    }
+    .primary{background:var(--gold);color:#2b0b1a}
+    .secondary{border:1px solid rgba(255,255,255,.65);color:white}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+    section{padding:85px 7%}
+    .section-title{text-align:center;max-width:700px;margin:0 auto 45px}
+    .section-title h2{font-size:2.6rem;color:var(--wine);margin-bottom:8px}
+    .section-title p{font-family:Arial,sans-serif;color:#72545f}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:auto}
+    .card{
+      background:white;border-radius:20px;padding:30px;text-align:center;
+      box-shadow:0 12px 35px rgba(64,14,34,.09);border:1px solid #f0dce3
+    }
+    .icon{font-size:3rem;margin-bottom:12px}
+    .card h3{color:var(--wine);font-size:1.45rem;margin-bottom:8px}
+    .card p{font-family:Arial,sans-serif;color:#6c5960;font-size:.95rem}
+    .about{background:linear-gradient(135deg,#fff,#fdeaf0)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;max-width:1100px;margin:auto}
+    .about-art{
+      min-height:390px;border-radius:28px;
+      background:linear-gradient(145deg,#6e1033,#b92f64 50%,#e0a94c);
+      display:grid;place-items:center;color:white;text-align:center;padding:40px;
+      box-shadow:0 20px 45px rgba(76,11,36,.2)
+    }
+    .about-art strong{font-size:4rem;display:block}
+    .about-copy h2{font-size:2.6rem;color:var(--wine);margin-bottom:15px}
+    .about-copy p{font-family:Arial,sans-serif;color:#5f4a53;margin-bottom:15px}
+    .contact{background:var(--deep);color:white}
+    .contact .section-title h2{color:#ffe3a3}
+    .contact .section-title p{color:#e7cfd7}
+    .contact-box{
+      max-width:800px;margin:auto;background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.15);border-radius:24px;padding:35px;text-align:center
+    }
+    .contact-box p{font-family:Arial,sans-serif;margin:9px 0;color:#f8eaf0}
+    footer{background:#180710;color:#d9bdc7;text-align:center;padding:22px;font:13px Arial,sans-serif}
+    @media(max-width:760px){
+      nav{padding:13px 5%}
+      nav a{margin-left:10px;font-size:.75rem}
+      .logo{font-size:1.05rem}
+      .cards,.about-grid{grid-template-columns:1fr}
+      section{padding:65px 5%}
+      .about-art{min-height:280px}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Pallavi <span>Sarees</span></div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">Raichur · Karnataka</div>
+    <h1>Pallavi Sarees</h1>
+    <p>Elegant sarees and beautiful dresses, thoughtfully selected for every celebration, occasion and unforgettable moment.</p>
+    <a class="btn primary" href="#collection">Explore Collection</a>
+    <a class="btn secondary" href="#contact">Visit Us</a>
+  </div>
+</header>
+
+<section id="collection">
+  <div class="section-title">
+    <h2>Our Collection</h2>
+    <p>Discover colour, elegance and timeless Indian style.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🥻</div>
+      <h3>Designer Sarees</h3>
+      <p>Statement sarees for weddings, festivals and special occasions.</p>
+    </div>
+    <div class="card">
+      <div class="icon">✨</div>
+      <h3>Traditional Sarees</h3>
+      <p>Classic styles with rich colours and graceful details.</p>
+    </div>
+    <div class="card">
+      <div class="icon">👗</div>
+      <h3>Beautiful Dresses</h3>
+      <p>Stylish dresses selected for a modern and elegant look.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-art">
+      <div>
+        <strong>PS</strong>
+        <span>Elegance · Colour · Tradition</span>
+      </div>
+    </div>
+    <div class="about-copy">
+      <h2>Where Tradition Meets Modern Luxury</h2>
+      <p>Pallavi Sarees brings together vibrant Indian fashion and a modern sense of elegance.</p>
+      <p>Whether you're shopping for a wedding, festival, celebration or everyday style, explore a collection designed to make every occasion feel special.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-title">
+    <h2>Visit Pallavi Sarees</h2>
+    <p>We'd love to help you find your perfect saree or dress.</p>
+  </div>
+  <div class="contact-box">
+    <p><strong>📍 Location:</strong> Raichur, Karnataka</p>
+    <p><strong>🛍️ Speciality:</strong> Sarees & Dresses</p>
+    <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Pallavi+Sarees+Raichur+Karnataka" target="_blank" rel="noopener">Find Us on Maps</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Pallavi Sarees · Raichur, Karnataka
+</footer>
+
+</body>
+</html>
